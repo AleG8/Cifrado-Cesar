@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Cifrado Cesar</title>
+</head>
+<body>
+    <main id="main">
+        <h1>Cifrado Cesar</h1>
+        <form id="form" autocomplete="off">
+            <input type="text" name="texto-para-cifrar" id="text-input" spellcheck="false" placeholder="Ingrese el texto"><br>
+            <div id="result"></div>
+        </form>
+        <section class="rango">
+            <input type="range" name="cifrado-range" id="rango" value="10" min="1" max="20" oninput="this.nextElementSibling.value = this.value">
+            <output name="cifrado-range" for="rango">10</output> 
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
